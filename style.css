@@ -3,7 +3,7 @@ body {
 }
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgb(243, 239, 239);
   display: flex;
   gap: 20px;
@@ -22,13 +22,12 @@ main {
 }
 aside {
   width: 25%;
-  border: 2px solid black;
-  background-color: white;
 }
 .logo {
   width: 80%;
   margin: 10px;
   display: flex;
+  flex-wrap: wrap;
   font-size: 2rem;
   color: rgb(8, 44, 153);
 }
@@ -70,7 +69,7 @@ aside {
   padding: 5px;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 }
 .main-box1 {
   width: auto;
@@ -80,7 +79,7 @@ aside {
   justify-content: space-between;
   align-items: center;
 }
-button {
+.main-box1 button {
   display: inline-block;
   padding: 10px 30px;
   border-radius: 20px;
@@ -212,4 +211,59 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.profile-detail {
+  width: 80%;
+  height: auto;
+  margin-top: 40px;
+  padding: 20px;
+  box-shadow: 0 0 10px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+.profile-box1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+}
+.profile-image {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+  border-radius: 30px;
+  background-color: rgb(218, 209, 211)
+}
+
+.btn button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 20px;
+  color: peru;
+  background-color: rgb(249, 225, 202)
+}
+.experience {
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* justify-content: space-around; */
+}
+.exp-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.experience h3, .experience p, .experience h4, .experience div{
+  margin: 5px 0;
 }
